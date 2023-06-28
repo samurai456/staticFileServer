@@ -10,7 +10,6 @@ app.use('/static', express.static(path.join(__dirname, '/stat')))
 app.use(cors({
     origin: '*',
     methods: ['POST', 'PUT', 'GET', 'DELETE'],
-    credentials: true,
 }));
 
 app.post('/upload', upload.single('file'), (req, res)=>{
