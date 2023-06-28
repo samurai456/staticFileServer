@@ -8,7 +8,7 @@ const app = express()
 
 app.use('/static', express.static(path.join(__dirname, '/stat')))
 app.use(cors({
-    origin: '*',
+    origin: 'https://staticfront.onrender.com',
     methods: ['POST', 'GET'],
 }));
 
